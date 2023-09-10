@@ -76,6 +76,16 @@
 \usepackage{multicol}
 \usepackage{multirow}
 
+% \usepackage{latexsym}
+% \usepackage[empty]{fullpage}
+% \usepackage{titlesec}
+% \usepackage{marvosym}
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{verbatim}
+% \usepackage{enumitem}
+% \usepackage[pdftex]{hyperref}
+% \usepackage{fancyhdr}
+
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -121,7 +131,35 @@
     \end{minipage}    
     }
 
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
 
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -143,75 +181,150 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Jianbin Chen} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/jianbinchen}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
+% \href{https://github.com/damonuc}{\raisebox{-0.05\height}\faGithub\ github.com/damonuc} \ $|$ \ 
+\href{https://linkedin.com/in/JianbinChen}{\raisebox{-0.05\height}\faLinkedin\ linkedin.com/in/JianbinChen} \ $|$ \ 
 % \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:jianbin.chen001@email.ucr.edu}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+19515573798}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\href{mailto:jchen939@ucr.edu}{\raisebox{-0.05\height}\faEnvelope \ jchen939@ucr.edu} \ $|$ \ 
+\href{tel:+19515573798}{\raisebox{-0.05\height}\faMobile \ +1 951 557 3598} \\
+\end{tabularx}
+\vspace{-10pt}
+%Interests/ Keywords/ Summary
+\section{Summary}
+\vspace{-5pt}
+I am specializing in Econometrics and Machine learning on Finance. My studies have encompassed knowledge in areas including Econometrics, Finance, Machine Learning, Algorithm, and Investments. 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\section{Education}
+\vspace{-5pt}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2021 - present & PhD (Economics) at \textbf{University of California, Riverside} \hfill \normalsize CA, US \\
+
+2023 - present & Master's Degree (Computer Science) at \textbf{University of California, Riverside} \hfill \normalsize CA, US \\
+
+2021 - 2023 & Master's Degree (Economics) at \textbf{University of California, Riverside} \hfill \normalsize CA, US \\ 
+
+2012 - 2014 & Master's Degree (Finance) at \textbf{Harbin Institute of Technology} \hfill \normalsize China\\ 
+
+2008 - 2012 & Bachelor's Degree (Computing Science) at \textbf{Shenzhen University} \hfill \normalsize China\\ 
+
+2008 - 2012 & Bachelor's Degree (Finance) at \textbf{Shenzhen University} \hfill \normalsize China\\ 
+
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
 %Experience
+\vspace{-10pt}
 \section{Work Experience}
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Guosen Securities Company Limited}{Shenzhen, China}
+    {Senior Associate, Investment Banking Department}{Dec 2017 - Apr 2019}
+    {\footnotesize
+    \begin{itemize}[nolistsep,topsep=-2pt]
+    \item Independently author business and financial analysis sections in IPO prospectuses.
+    \item Examine transaction authenticity by investigating suppliers, customers, and employees.
+    \item Conduct commercial due diligence for significant asset. 
+    \item Utilize diverse valuation models to determine subsidiary's fair value.
+    \item Negotiate with potential buyers and structured transaction details and timelines.
+    \end{itemize}}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+
+    % \resumeItemListStart
+    %     \resumeItem{Discussion Forum Upgrades}
+    %       {Refactor forum for performance to handle large databases.}
+    %       \resumeItem{REST API for Discussion Forum}
+    %       {Symphony \& Twig based Forum parts converted to API-first interface.}
+    %       \resumeItem{Ratchet PHP WebSocket}{Implemented a WebSocket for low-latency real time exchange of posts and thread updates.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading{Dongxing Securities Company Limited}{Shenzhen, China}
+    {Senior Associate, Investment Banking Department}{Feb 2017 - Dec 2017}
+    {\footnotesize
+    \begin{itemize}[nolistsep,topsep=-2pt]
+    \item Restructure accounting methods, financial statements, and business process to align with listing requirements.
+    \item  Review and analyze financial statements, examine the reconciliation of accounting entries.
+    \end{itemize}}
+
+        \resumeSubheading{PricewaterhouseCoopers(PwC)}{Shenzhen, China}
+    {Senior Associate, Assurance}{Oct 2014 - Feb 2017}
+    {\footnotesize
+    \begin{itemize}[nolistsep,topsep=-2pt]
+    \item Conduct assurance projects for listed companies, MNCs, and other entities.
+    \item Perform rigorous audit procedures on various accounts, including revenue, expenditure, cash, debt, receivables, etc.
+    \item Program VBA to combine and analyse accounting data from over a thousand subsidiaries.
+    \item Conduct asset impairment tests and create earning forecasts through various models.
+    \item verify the authenticity and accuracy of accounting entries and identify potential financial fraud.
+    \end{itemize}}
+
+\resumeSubHeadingListEnd
+
+% \begin{jobshort}{Investment banking Senior Analyst at Guosen Securities Company Limited}{Dec 2017 - Apr 2019}
+% long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+% \end{jobshort}
 
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
+% \begin{joblong}{Designation}{Mar 2019 - Jan 2021}
+% \item long long line of blah blah that will wrap when the table fills the column width
+% \item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+% \end{joblong}
   
-%Projects
-\section{Projects}
+% %Projects
+% \section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\vspace{-10pt}
+\section{Research \& Publications}
+\vspace{-5pt}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+\begin{itemize}[nolistsep,topsep=-2pt]
+\item \textbf{Jianbin Chen, Ke Peng.} Stock Price Effect of CEO Turnover and Its Contributing Factors. \textit{South China Finance, 2014(07). P60-68}
+\item The Bias-Variance tradeoff between OLS and 2SLS estimator. \textit{Working paper}
+\item Refinement forecast of weak instruments on endogenous problem. \textit{Working paper}
+\item A better way to implement bootstrap in 2SLS model. \textit{Working paper}
+\end{itemize}
+
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\vspace{-10pt}
+\section{Skills \& Language}
+\vspace{-5pt}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{Skill:} &  \normalsize{Financial Analysis, Quantitative Analysis, Econometric Modeling, Causal Inference}\\
+\textbf{Tools:} &  \normalsize{ MS Office, Python, \textrm{\LaTeX}, C++(Basic)}\\
+\textbf{Language:} &  \normalsize{Mandarin(Native), Cantonese(Native), English(Fluent), Japanese(Basic)}\\
 \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+%----------------------------------------------------------------------------------------
+%	Certification
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\section{Certifications}
+\vspace{-5pt}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Chartered Financial Analyst level III passed, CFA (No. 212842)   & \hfill \normalsize 2018\\
+The Chinese Institute of Certified Public Accountant, CICPA (No. 4720180168) & \hfill  \normalsize 2018\\
+Chinese Judicial Exam (Legal professional qualification certificate, No. 20164403031769)  &  \hfill  \normalsize 2016\\
+\end{tabularx}
+
+% \vfill
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
